@@ -1,0 +1,58 @@
+.row {
+    display: flex;
+}
+
+.cell {
+    flex: 1;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.mars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 430px;
+}
+
+.mars_map {
+    position: absolute;
+    top: 20px;
+    transform-style: preserve-3d;
+    transform: rotateX(45deg);
+    background-image: url('../../image/mars.jpg');
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+.content {
+    margin-top: 500px;
+    text-align: center;
+}
+
+.top {
+    width: 600px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.content__center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cell__black {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+input[type="number"] {
+    width: 60px;
+    height: 40px;
+}
